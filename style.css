@@ -308,13 +308,13 @@ h3 .underline {
     font-size: 2rem; 
 }
 
-.expertise-text {
+.expertise-text, .news-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.resume,.services, .packs {
+.resume,.services, .packs , .news-item {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -537,4 +537,54 @@ h2 {
     transform: translate(35%, 30%) rotate(45deg);
     width: 80%;
     
+}
+
+.news-item {
+    margin-block: 2vh;
+    margin-left: 10vw;
+    border: 1px solid #e4e3df;
+    height: fit-content;
+}
+
+.news-img {
+    width: 30vw;
+    height: 40vh;
+}
+.news-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-text {
+    justify-content: flex-start;
+    margin-block: 2.5vh;
+}
+
+.news-text > * {
+    padding-inline: 1vw;
+}
+.news-text a {
+    color: rgb(220, 48, 74);
+    text-decoration: none;
+}
+
+.news-text a:hover{
+    color: #e88694;
+}
+.fa-heart {
+    color: rgb(220, 48, 74);
+}
+
+.news-details {
+    display: flex;
+    align-items: center;
+}
+.news-details > *{
+    padding-inline: 0.5vw;
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
 }
