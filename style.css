@@ -40,10 +40,11 @@ footer {
 .map {
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 20vh;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 .map iframe {
     width: 100%;
@@ -53,7 +54,7 @@ header {
     background-image: url('imgs/bg2.jpg');
     background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -248,7 +249,7 @@ li .selected {
     justify-content: flex-start;
 }
 
-.about-sub h3 {
+.about-sub h3, .resume-sub h3 {
     font-weight: 400;
     padding-bottom: 2px;
     margin-bottom: 5vh;
@@ -326,14 +327,60 @@ h3 .underline {
 
 .resume {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.resume-item {
+.resume-sub {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid #e4e3df;
+    width: 25vw;
+    margin: 1vw;
+    padding: 20px;
+}
+
+.pink-text {
+    color: #e88694;
+}
+
+.resume-date {
+    color: #e88694;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: vh;
+}
+
+.resume-title {
+    margin-bottom: 2vh;
+    font-style: italic;
+    color: #2d2f30;
+}
+.resume-head {
+    margin-left: 10vw;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.skills-langs {
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-container {
+    background-color: #e4e3df; 
+    height: 4px;
+    width: 90%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-block: 2vh;
+}
+
+.progress-bar {
+    background-color: #e88694; 
+    height: 100%;
+    width: 90%; 
+    border-radius: 5px 0 0 5px;
 }
