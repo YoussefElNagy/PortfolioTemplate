@@ -10,6 +10,13 @@
     font-family: 'Cairo', Arial, Helvetica, sans-serif;
 }
 
+#map-body {
+    background-image: url('imgs/maps.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 body {
     background-color: #fdfdfd;
 }
@@ -31,7 +38,9 @@ footer {
     font-size: 1.2rem;
 }
 .map {
-    width: 100vw;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -59,12 +68,12 @@ button {
     background-color: #e88694;
     color: #fdfdfd;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     width: 10vw;
     font-weight: 600;
     margin-top: 5vh;
     transition: background-color 0.3s ease-in-out;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     
 }
 
@@ -82,6 +91,8 @@ nav {
     background-color: #fdfdfd;
     box-shadow: 0px 0px 0.5px 1.5px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    position: sticky;  /* Makes the nav sticky */
+    top: 0;  /* Sticks the nav at the top of the viewport */
 }
 
 nav ul {
@@ -92,6 +103,7 @@ nav ul {
 nav ul li {
     padding: 1vw;
     list-style-type: none;
+    font-weight: 700;
 }
 
 li a {
@@ -166,7 +178,7 @@ li .selected {
 
 .dark-item i:hover{
     color: #e88694;
-    cursor: pointer;
+    cursor: text;
 }
 
 .mail-box {
@@ -187,13 +199,13 @@ li .selected {
     font-size: 2rem;
 }
 .mail-box i {
-    color: #e88694;
+    color: #fdfdfd;
     scale: 3;
     transition: 0.3s linear ;
 }
 
 .mail-box a i:hover {
-    color: #fdfdfd;
+    color: #e88694;
 }
 
 .contact {
@@ -216,4 +228,112 @@ li .selected {
 
 .contact a i:hover {
     color: #e88694;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.about-sub {
+    border: 1px solid #e4e3df;
+    padding: 5vw 5vh;
+    flex-basis: 1;
+    width: 33vw;
+    color: #2d2f30;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about-sub h3 {
+    font-weight: 400;
+    padding-bottom: 2px;
+    margin-bottom: 5vh;
+    font-size: 1.6rem
+}
+
+h3 .underline {
+    border-bottom: 1px solid #e88694;
+}
+
+.about-btn button {
+    background-color: #fdfdfd;
+    color: #e88694;
+    border: 2px solid #e88694;
+    border-radius: 1px;
+    width: 10vw;
+    height: 5vh;
+    font-size: 0.8rem;
+    overflow: hidden;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+.about-btn button:hover {
+    background-color: #e88694;
+    color: #fdfdfd;
+}
+
+.about-sub .bold {
+    font-weight: bold;
+}
+
+
+.socials {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socials a i{
+    color: #e88694;
+    text-decoration: none;
+    margin-inline: 0.5vw;
+    margin-block: 1vh; 
+    transition: color 0.3 ease;
+}
+
+.socials a i:hover {
+    color: rgb(220, 48, 74);
+}
+
+.expertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.expertise-item {
+    display: flex;
+    align-items: center; 
+    border-bottom: 1px solid #e4e3df;
+    padding: 1vh; 
+}
+
+.expertise-item i {
+    color: #e88694;
+    margin-inline: 1vw;
+    font-size: 2rem; 
+}
+
+.expertise-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #e4e3df;
 }
