@@ -671,7 +671,7 @@ h2 {
     margin-inline: 0.5vw;
     position: relative;
     overflow: hidden;
-    flex-shrink: 0;
+    flex-shrink: 1;
   }
 
   .portfolio {
@@ -717,7 +717,6 @@ h2 {
     color: #e4e3df;
     width: fit-content;
     height: 5vh;
-    z-index: 1073;
     padding: 3vh 1vw;
     justify-content: center;
     align-items: center;
