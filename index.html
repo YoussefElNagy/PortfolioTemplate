@@ -674,5 +674,17 @@
 
     <footer>All Copyrights &copy; reserved to Youssef El Nagy</footer>
     <script src="https://kit.fontawesome.com/830958be09.js" crossorigin="anonymous"></script>
+    <script>
+        const profileImage = document.querySelector('.profile-pic');
+        
+                window.addEventListener('scroll', function() {
+            
+            if (window.scrollY > 100) { 
+                profileImage.classList.add('hide-profile-image');
+            } else {
+                profileImage.classList.remove('hide-profile-image');
+            }
+        });
+        </script>
 </body>
 </html>

@@ -114,7 +114,14 @@ li a:hover {
     z-index: 5;
     padding: 0;
     width: fit-content;
+    transition: opacity 1s ease;
+
 }
+.hide-profile-image {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .profile-pic img {
     width: 80px;
     z-index: 6;
