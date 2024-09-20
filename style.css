@@ -671,22 +671,26 @@ h2 {
     width: 100%;
     height: 100%;
     padding-bottom: 0;
-  }
+    object-fit: cover; 
+}
 
-  .portfolio-img {
-    width: 30vw;
+.portfolio-img {
+    height: 30vh;
     margin-inline: 0.5vw;
+    margin-bottom: 1vw; 
     position: relative;
     overflow: hidden;
-    flex-shrink: 1;
-  }
+    flex-shrink: 2;
+}
 
-  .portfolio {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
-  }
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-left: 0; 
+    gap: 1vw; 
+}
 
   .img-overlay {
     opacity: 0;
@@ -708,10 +712,12 @@ h2 {
 
 .img-overlay:hover {
     opacity: 1;
+    cursor: text;
   }
 
   .img-overlay h6 {
     font-size: 2rem;
+    text-transform: uppercase;
   }
 
 
@@ -721,7 +727,6 @@ h2 {
     right: 0;
     top: 20vh;
     background-color: #e88694;
-    color: #e4e3df;
     width: fit-content;
     height: 5vh;
     padding: 3vh 1vw;
@@ -733,6 +738,15 @@ h2 {
     border-radius: 2px;
 }
 
+.feedback-btn a {
+    text-decoration: none;
+    color: #fdfdfd;
+    font-weight: 500;
+}
+
 .feedback-btn:hover{
     transform: translateX(-1%);
+    cursor: pointer;
 }
+
+
